@@ -98,8 +98,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "backend.wsgi.application"
-ASGI_APPLICATION = "backend.asgi.application"
+WSGI_APPLICATION = "backend.wsgi.app"
+ASGI_APPLICATION = "backend.asgi.app"
 
 
 # Password validation
