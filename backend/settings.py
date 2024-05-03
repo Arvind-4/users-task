@@ -27,7 +27,6 @@ SECRET_KEY = get_env_value("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = get_boolean_env_value("DJANGO_DEBUG")
-print("DEBUG", DEBUG)
 
 ALLOWED_HOSTS = get_array_env("DJANGO_ALLOWED_HOSTS")
 
