@@ -1,10 +1,10 @@
-import os
 from django.conf import settings
+from backend.utils import get_env_value
 
-DJANGO_PG_HOST = os.environ.get("DJANGO_PG_HOST")
-DJANGO_PG_DATABASE = os.environ.get("DJANGO_PG_DATABASE")
-DJANGO_PG_USER = os.environ.get("DJANGO_PG_USER")
-DJANGO_PG_PASSWORD = os.environ.get("DJANGO_PG_PASSWORD")
+DJANGO_PG_HOST = get_env_value("DJANGO_PG_HOST")
+DJANGO_PG_DATABASE = get_env_value("DJANGO_PG_DATABASE")
+DJANGO_PG_USER = get_env_value("DJANGO_PG_USER")
+DJANGO_PG_PASSWORD = get_env_value("DJANGO_PG_PASSWORD")
 
 if all([DJANGO_PG_HOST, DJANGO_PG_DATABASE, DJANGO_PG_USER, DJANGO_PG_PASSWORD]):
     print("Using PostgreSQL database")
