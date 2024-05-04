@@ -160,8 +160,8 @@ REST_FRAMEWORK = {
 }
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Your Project API',
-    'DESCRIPTION': 'Your project description',
-    'VERSION': '1.0.0',
+    'TITLE': 'User API',
+    'DESCRIPTION': 'A straightforward Django app with a Neon database, hosted on Vercel.',
+    'VERSION': '0.1.0',
     'SERVE_INCLUDE_SCHEMA': False,
 }
